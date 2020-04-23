@@ -2,6 +2,8 @@ package com.tsystems.javaschool.tasks.calculator;
 
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Calculator {
 
@@ -22,9 +24,7 @@ public class Calculator {
                 result = null;
             }
         }
-        if (result != null && (result.equals("Infinity") || result.equals("null"))) {
-            result = null;
-        }
+        result = checkResult(result);
         return result;
     }
 
@@ -42,6 +42,24 @@ public class Calculator {
             }
         }
         return true;
+    }
+
+    private String checkResult(String result) {
+        if (result != null) {
+            if (result.contains(".") && (result.length() - result.indexOf(".") > 4)) {
+                result = round(result);
+            }
+            if (result.equals("Infinity") || result.equals("null")) {
+                result = null;
+            }
+        }
+        return result;
+    }
+
+    private String round(String value) {
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(4, RoundingMode.HALF_UP);
+        return String.valueOf(bd);
     }
 
 }

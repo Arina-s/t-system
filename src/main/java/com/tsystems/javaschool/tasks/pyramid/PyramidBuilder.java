@@ -19,7 +19,7 @@ public class PyramidBuilder {
         Collections.sort(inputNumbers);
         int rows = countRows(inputNumbers.size());
         int columns = countColumns(rows);
-        int [][] array = new int[rows][columns];
+        int[][] array = new int[rows][columns];
         array = fillPyramid(array, inputNumbers);
         return array;
     }
@@ -61,7 +61,7 @@ public class PyramidBuilder {
         return count;
     }
 
-    private int[][] fillPyramid(int [][] array, List<Integer> inputNumbers) {
+    private int[][] fillPyramid(int[][] array, List<Integer> inputNumbers) {
         int rows = array.length;
         int column = array[0].length;
         int indexColumn = column;
