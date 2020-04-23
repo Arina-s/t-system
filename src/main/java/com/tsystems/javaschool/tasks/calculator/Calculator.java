@@ -61,4 +61,5 @@ public class Calculator {
         bd = bd.setScale(4, RoundingMode.HALF_UP);
         return String.valueOf(bd);
     }
+
 }
