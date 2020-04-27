@@ -12,7 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : {Arina Slizh}
-* Codeship : {here}
+* Codeship : {[ ![Codeship Status for tschool/javaschoolexam](https://app.codeship.com/projects/e9bdf1d0-678a-0138-8a02-52f6c3762b41/status?branch=master)](https://app.codeship.com/projects/e9bdf1d0-678a-0138-8a02-52f6c3762b41)}
 
 ### How to start?  ###
 * Install [GIT](https://git-scm.com/) and [Maven](https://maven.apache.org)
