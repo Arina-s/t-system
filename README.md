@@ -12,7 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : {Arina Slizh}
-* Codeship : {https://app.circleci.com/pipelines/github/Arina-s/t-system/3/workflows/b55a6040-ac4b-4f1d-abc8-391548c73c7a/jobs/4}
+* Codeship : {}
 
 ### How to start?  ###
 * Install [GIT](https://git-scm.com/) and [Maven](https://maven.apache.org)
